@@ -176,6 +176,7 @@ DEPENDENCIES
   json
   less-js
   mongoid (~> 2.0)
+  nokogiri
   rails (= 3.1.0.rc1)
   rspec-rails
   tilt!

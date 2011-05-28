@@ -11,6 +11,8 @@ gem "bson_ext", "~> 1.3"
 
 gem 'fabrication'
 
+gem 'nokogiri'
+
 # Asset template engines
 gem 'json'
 gem 'tilt', :git => 'git://github.com/thisduck/tilt.git'
