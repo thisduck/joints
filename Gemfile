@@ -33,6 +33,7 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 group :development, :test do
+  gem "database_cleaner"
   gem 'rspec-rails'
   gem 'cucumber-rails'
 end
