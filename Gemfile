@@ -11,6 +11,7 @@ gem "bson_ext", "~> 1.3"
 
 gem 'fabrication'
 
+gem "geocoder", :git => 'git://github.com/thisduck/geocoder.git'
 gem 'nokogiri'
 
 # Asset template engines

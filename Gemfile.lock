@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/thisduck/geocoder.git
+  revision: 247281ef3733ae34b138191da0efd737285d0d2d
+  specs:
+    geocoder (1.0.1)
+
+GIT
   remote: git://github.com/thisduck/tilt.git
   revision: 0ebd44a5e24f401d018c3653deb9407b657af327
   specs:
@@ -174,6 +180,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   fabrication
+  geocoder!
   jquery-rails
   json
   less-js
