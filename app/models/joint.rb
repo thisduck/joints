@@ -11,10 +11,13 @@ class Joint
 
   field :address, type: String
   field :full_address, type: String
+
   field :location, type: Array
   index [[ :location, Mongo::GEO2D ]]
+  geocoded_by :address, coordinates: :location
 
-  geocoded_by :address, :coordinates => :location
+  field :cached_inspections, type: Array
+
   has_many :inspections
 
   before_save :set_location
@@ -27,5 +30,11 @@ class Joint
       self.location = first.coordinates
       self.full_address = first.address
     end
+  end
+
+  def cache_inspections!
+    self.update_attributes(
+      cached_inspections: self.inspections.order_by([[:inspected_at, :desc]]).limit(5).collect(&:as_json)
+    )
   end
 end

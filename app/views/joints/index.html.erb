@@ -1,0 +1,19 @@
+<div id="container">
+  <a href="#" id="find-places" class="button purple">Find</a>
+    
+  <ul id="joints"></ul>
+</div>
+
+<script type="text/html" id="tmpl_joint">
+  <h3>{{name}}</h3>
+  <span>{{kind_of}}</span>
+  <p> {{full_address}} </p>
+  <ul class="inspections">
+    {{#cached_inspections}}
+      <li class="inspection {{inspection_class status}}"> 
+        &nbsp;
+      </li>
+    {{/cached_inspections}}
+  </ul>
+  <div class="clear" />
+</script>

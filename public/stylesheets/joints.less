@@ -1,0 +1,44 @@
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*= require bootstrap
+*/
+
+a.button {
+  .button();
+  &.purple {
+    .button(@purple,#fff,0 -1px 1px rgba(0,0,0,.4));
+  }
+  &.blue {
+    .button(@blue,#fff,0 -1px 1px rgba(0,0,0,.4));
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+#joints, .inspections {
+  list-style: none;
+  padding: 0;
+}
+
+.inspection {
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  float: left;
+  margin-right: 15px;
+}
+
+.inspection.pass {
+  background-color: green;
+}
+
+.inspection.conditional {
+  background-color: yellow;
+}
+
+.inspection.closed {
+  background-color: @red;
+}

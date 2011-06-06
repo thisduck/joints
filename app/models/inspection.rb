@@ -8,7 +8,7 @@ class Inspection
 
   field :status, type: String
   field :details, type: String
-  field :inspected_at, type: Date
+  field :inspected_at, type: Time
   field :severity, type: String
   field :action, type: String
   field :court_outcome, type: String

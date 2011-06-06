@@ -8,4 +8,10 @@ module JointTasks
       joint.save
     end.count
   end
+
+  def self.store_inspections
+    Joint.where(cached_inspections: nil).each do |joint|
+      joint.cache_inspections!
+    end
+  end
 end

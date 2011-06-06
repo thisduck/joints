@@ -6,4 +6,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
+//
+//= require less
+//= require gears_init
+//= require geo
+//= require handlebars
+//= require underscore
+//= require backbone
+//
 //= require_tree .
