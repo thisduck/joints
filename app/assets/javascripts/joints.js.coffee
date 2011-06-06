@@ -47,12 +47,12 @@ class AppView extends Backbone.View
 		if geo_position_js.init()
 			# TODO: some kind of loading div.
 			geo_position_js.getCurrentPosition ((position) =>
-				# TODO: do ajax here
 				$.ajax
+					dataType: 'json'
 					data:
 						lat: position.coords.latitude
 						long: position.coords.longitude
-					url: '/joints/near'
+					url: '/joints/dummy_near'
 					success: (data) =>
 						@joints.refresh(data)
 			), (->

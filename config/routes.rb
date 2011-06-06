@@ -1,6 +1,7 @@
 Joints::Application.routes.draw do
   root to: "joints#index"
   get "joints/near"
+  get "joints/dummy_near"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

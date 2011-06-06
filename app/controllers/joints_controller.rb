@@ -7,4 +7,8 @@ class JointsController < ApplicationController
     render :json => Joint.near(location).and(:kind_of.in => ["Food Take Out", "Restaurant"] )
   end
 
+  def dummy_near
+    render :layout => false
+  end
+
 end
